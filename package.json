@@ -4,7 +4,7 @@
   "description": "Bot de Discord para ADECSEI GROUP — Tickets y Mensajes",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js"
     
   },
   "dependencies": {
