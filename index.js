@@ -51,6 +51,24 @@ if (!token) {
   process.exit(1);
 }
 
+client.on('interactionCreate', async (interaction) => {
+
+  if (interaction.isButton()) {
+    if (interaction.customId.startsWith('close_ticket_')) {
+      return tickets.handleCloseTicket(interaction, client);
+    }
+    return tickets.handleButtonInteraction(interaction, client);
+  }
+
+  if (interaction.isStringSelectMenu()) {
+    return tickets.handleSelectMenu(interaction, client);
+  }
+
+  if (interaction.isModalSubmit()) {
+    return tickets.handleModalSubmit(interaction, client);
+  }
+
+});
 client.login(token).catch(err => {
   if (err.message?.includes('disallowed intents')) {
     console.error('❌ Intents privilegiados NO activados. Ve a:');
