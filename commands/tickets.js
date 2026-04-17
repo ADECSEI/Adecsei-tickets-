@@ -1,4 +1,4 @@
-const tickets = require('commands/tickets.js');
+
 const {
   ModalBuilder,
   TextInputBuilder,
