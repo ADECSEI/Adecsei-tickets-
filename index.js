@@ -44,7 +44,7 @@ for (const file of commandFiles) {
   if (command.name) client.commands.set(command.name, command);
 }
 
-const token = process.env.DISCORD_BOT_TOKEN;
+const token = process.env.TOKEN;
 if (!token) {
   console.error('❌ ERROR: DISCORD_BOT_TOKEN no está configurado en el archivo .env');
   process.exit(1);
