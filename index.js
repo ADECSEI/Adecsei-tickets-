@@ -1,4 +1,4 @@
-const tickets = require('commands/tickets.js');
+const tickets = require('./commands/tickets.js');
 require('dotenv').config();
 const {
   Client,
