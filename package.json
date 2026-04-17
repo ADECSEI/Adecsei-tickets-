@@ -1,7 +1,7 @@
 {
   "name": "adecsei-discord-bot",
   "version": "1.0.0",
-  "description": "Bot de Discord para ADECSEI GROUP — Tickets, Bienvenida y Mensajes",
+  "description": "Bot de Discord para ADECSEI GROUP — Tickets y Mensajes",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
